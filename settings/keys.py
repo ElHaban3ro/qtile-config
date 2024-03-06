@@ -53,7 +53,7 @@ keys = [
     Key([mod], "b", lazy.spawn("brave")),
 
     # Terminal
-    #Key([mod], "return", lazy.spawn("kitty")),
+    Key([mod], "return", lazy.spawn("kitty")),
 
     # Screenshot
     Key([mod], "s", lazy.spawn("scrot")),

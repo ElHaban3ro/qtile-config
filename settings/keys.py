@@ -53,11 +53,8 @@ keys = [
     Key([mod], "b", lazy.spawn("brave")),
 
     # Terminal
-    Key([mod], "Return", lazy.spawn("kitty")),
-
-    # File Explorer
-    Key([mod], "e", lazy.spawn("thunar")),
-
+    #Key([mod], "return", lazy.spawn("kitty")),
+2
     # Screenshot
     Key([mod], "s", lazy.spawn("scrot")),
     Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
@@ -78,5 +75,18 @@ keys = [
     # Brightness
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+
+
+    # ------------ Personal Keybindings ------------
+
+    # Abre discord.
+    Key([mod], "p", lazy.spawn('discord'), desc="Launch Discord"),
+
+    # Abre el explorador de archivos.
+    Key([mod], "e", lazy.spawn('thunar'), desc="Launch explorer"),
+
+    # Abre el controlador de volumen.
+    Key([mod], "v", lazy.spawn('pavucontrol'), desc="Launch volume control"),
+
 
 ]

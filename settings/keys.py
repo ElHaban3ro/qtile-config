@@ -54,7 +54,7 @@ keys = [
 
     # Terminal
     #Key([mod], "return", lazy.spawn("kitty")),
-2
+
     # Screenshot
     Key([mod], "s", lazy.spawn("scrot")),
     Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
